@@ -406,7 +406,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,(200.0*16/2),158}  // default steps per unit for i3 Berlin
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,(200.0*16/2/4),158}  // default steps per unit for i3 Berlin//zstep was off by factor of 4 in original version for some reason
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 50}    // (mm/sec) 
 #define DEFAULT_MAX_ACCELERATION      {9000,9000,25,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
