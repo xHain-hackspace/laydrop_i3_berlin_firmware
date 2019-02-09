@@ -10,5 +10,10 @@ Open3DEngineeringGithubFirmware_5thJuly2015:
 Last version of the official firmware that was available on Github.
 Single Extruder Configuration.
 Travel limits tweaked to our specific hardware.
-Fixed to compile on Arduin 1.8.0.
+Fixed to compile on Arduino 1.8.0.
 Reports version as Marlin 1.0.0 RC2-mm.
+
+Marlin-1.1.x:
+Marlin 1.1.9 adapted for the i3 Berlin from laydrop.
+Single Extruder configuration.
+This is the one we are using right now.
