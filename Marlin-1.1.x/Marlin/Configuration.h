@@ -720,7 +720,7 @@
  * or (with LCD_BED_LEVELING) the LCD controller.
  */
 #define PROBE_MANUALLY
-#define MANUAL_PROBE_START_Z 0.2
+#define MANUAL_PROBE_START_Z 0.0
 
 /**
  * A Fix-Mounted Probe either doesn't deploy or needs manual deployment.
@@ -1097,12 +1097,12 @@
  * Override if the automatically selected points are inadequate.
  */
 #if ENABLED(AUTO_BED_LEVELING_3POINT) || ENABLED(AUTO_BED_LEVELING_UBL)
-  #define PROBE_PT_1_X 10
+  #define PROBE_PT_1_X 50
   #define PROBE_PT_1_Y 98
-  #define PROBE_PT_2_X 180
-  #define PROBE_PT_2_Y 190
-  #define PROBE_PT_3_X 180
-  #define PROBE_PT_3_Y 10
+  #define PROBE_PT_2_X 140
+  #define PROBE_PT_2_Y 150
+  #define PROBE_PT_3_X 140
+  #define PROBE_PT_3_Y 50
 #endif
 
 /**
