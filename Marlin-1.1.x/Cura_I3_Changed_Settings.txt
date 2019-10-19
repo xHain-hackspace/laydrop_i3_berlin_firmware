@@ -1,0 +1,25 @@
+[general]
+version = 4
+name = Prusa i3 (i3 Berlin)_settings
+definition = prusa_i3
+
+[metadata]
+setting_version = 8
+type = definition_changes
+
+[values]
+extruders_enabled_count = 1
+machine_depth = 190
+machine_height = 190
+machine_start_gcode = G21 ;metric values
+	G90 ;absolute positioning
+	M82 ;set extruder to absolute mode
+	M107 ;start with the fan off
+	G28; autohome
+	M420 S1 ; enable bed level correction
+	G92 E0 ;zero the extruded length
+	G1 F200 Z3 E30 ;extrude 30mm of feed stock
+	G92 E0 ;zero the extruded length again
+	G1 F9000
+	M117 Printing..
+machine_width = 190
